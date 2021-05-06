@@ -30,6 +30,13 @@ const ctaBtn = document.querySelector('.cta-btn');
 ctaBtn.addEventListener('click', () => {
   const menu = document.querySelector('.home-page');
   hidePages();
+  menu.classList.remove('hide');
+});
+
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', () => {
+  const home = document.querySelector('.home-page');
+  hidePages();
   home.classList.remove('hide');
 });
 
