@@ -1,3 +1,10 @@
+import Navigation from './navigation';
+import initPage from './pages/mainpage';
+import homePage from './pages/home';
+import aboutPage from './pages/about';
+import menuPage from './pages/menu';
+import contactPage from './pages/contact';
+
 function html() {
   const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
   link.type = 'image/x-icon';
@@ -11,6 +18,7 @@ content.appendChild(initPage());
 const mainContent = document.querySelector('.content');
 mainContent.append(homePage());
 mainContent.append(aboutPage());
+mainContent.append(menuPage());
 mainContent.append(contactPage());
 mainContent.append(html());
 
