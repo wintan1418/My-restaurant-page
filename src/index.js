@@ -70,3 +70,4 @@ nav.onClick((e) => {
     contact.classList.remove('hide');
   }
 });
+console.log('hello')
