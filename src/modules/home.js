@@ -9,7 +9,7 @@ const Home = (() => {
     div.classList.add('home-div');
 
     const subHead = document.createElement('h2');
-    subHead.innerText = 'Welcome to YAm-yam!! We serve : ';
+    subHead.innerText = 'Welcome to Ariya!! We serve : ';
 
     const serveList = document.createElement('h3');
     serveList.innerHTML = '<span>Breakfast</span> <br> <span>Lunch</span> <br> <span>Dinner</span> ';
