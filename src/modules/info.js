@@ -48,7 +48,6 @@ const Info = (() => {
     li5.textContent = 'Privacy Policy';
     li5.setAttribute('class', 'info-li');
 
-
     const br1 = document.createElement('br');
     const br2 = document.createElement('br');
     form.appendChild(email);

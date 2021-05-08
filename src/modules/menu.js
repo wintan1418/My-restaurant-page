@@ -16,7 +16,7 @@ const Menu = (() => {
     brkUl.classList.add('breakfast-ul');
     const brkList1 = document.createElement('li');
     brkList1.setAttribute('class', 'breakfast-list');
-    brkList1.textContent = '';
+    brkList1.textContent = 'jollof-rice: $10';
     const brkList2 = document.createElement('li');
     brkList2.setAttribute('class', 'breakfast-list');
     brkList2.textContent = '';
@@ -38,7 +38,6 @@ const Menu = (() => {
     breakDiv.appendChild(h1);
     breakDiv.appendChild(brkUl);
 
-
     const lunchDiv = document.createElement('div');
     lunchDiv.classList.add('div-lunch');
     const h2 = document.createElement('h2');
@@ -47,7 +46,7 @@ const Menu = (() => {
     lunchUl.classList.add('lunch-ul');
     const lunchList1 = document.createElement('li');
     lunchList1.setAttribute('class', 'lunch-list');
-    lunchList1.textContent = 'add something ....';
+    lunchList1.textContent = 'fufu and oka: 19$';
     const lunchList2 = document.createElement('li');
     lunchList2.setAttribute('class', 'lunch-list');
     lunchList2.textContent = '';
@@ -60,7 +59,6 @@ const Menu = (() => {
     const lunchList5 = document.createElement('li');
     lunchList5.setAttribute('class', 'lunch-list');
     lunchList5.textContent = '';
-
 
     lunchUl.appendChild(lunchList1);
     lunchUl.appendChild(lunchList2);
@@ -91,7 +89,6 @@ const Menu = (() => {
     const dinnerList5 = document.createElement('li');
     dinnerList5.setAttribute('class', 'dinner-list');
     dinnerList5.textContent = '';
-
 
     dinnerUl.appendChild(dinnerList1);
     dinnerUl.appendChild(dinnerList2);

@@ -1,6 +1,5 @@
 const Home = (() => {
   const homePage = () => {
-
     const content = document.getElementById('content');
 
     const main = document.createElement('main');

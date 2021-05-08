@@ -1,73 +1,40 @@
-console.log('hello')
-import Navigation from './navigation';
-import initPage from './pages/mainpage';
-import homePage from './pages/home';
-import aboutPage from './pages/about';
-import menuPage from './pages/menu';
-import contactPage from './pages/contact';
+import Nav from './modules/nav';
+import Home from './modules/home';
+import Menu from './modules/menu';
+import Info from './modules/info';
 
-function html() {
-  const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-  link.type = 'image/x-icon';
-  link.rel = 'shortcut icon';
-  document.getElementsByTagName('head')[0].appendChild(link);
-}
-
-const content = document.querySelector('.content');
-content.appendChild(initPage());
-
-const mainContent = document.querySelector('.content');
-mainContent.append(homePage());
-mainContent.append(aboutPage());
-mainContent.append(menuPage());
-mainContent.append(contactPage());
-mainContent.append(html());
-
-const nav = new Navigation();
-const pages = document.querySelectorAll('.pages');
-for (let i = 1; i < pages.length; i) {
-  pages[i].classList.add('hide');
-}
-
-const hidePages = () => {
-  for (let i = 0; i < pages.length; i) {
-    pages[i].classList.add('hide');
-  }
+const clearContent = () => {
+  const content = document.getElementById('content');
+  const navItems = document.querySelectorAll('nav li');
+  content.removeChild(content.lastChild);
+  navItems.forEach(navItems => navItems.classList.remove('active'));
 };
 
-const ctaBtn = document.querySelector('.cta-btn');
-ctaBtn.addEventListener('click', () => {
-  const menu = document.querySelector('.home-page');
-  hidePages();
-  menu.classList.remove('hide');
-});
+const showMenu = () => {
+  clearContent();
+  Menu.menuList();
+};
 
-const logo = document.querySelector('.logo');
-logo.addEventListener('click', () => {
-  const home = document.querySelector('.home-page');
-  hidePages();
-  home.classList.remove('hide');
-});
+const showHome = () => {
+  clearContent();
+  Home.homePage();
+  const menuBtn = document.getElementById('btn-menu');
+  menuBtn.addEventListener('click', showMenu);
+};
 
-nav.onClick((e) => {
-  if (e.target.id === 'home') {
-    const home = document.querySelector('.home-page');
-    hidePages();
-    home.classList.remove('hide');
-  }
-  if (e.target.id === 'about') {
-    const about = document.querySelector('.about-page');
-    hidePages();
-    about.classList.remove('hide');
-  }
-  if (e.target.id === 'menu') {
-    const menu = document.querySelector('.menu-page');
-    hidePages();
-    menu.classList.remove('hide');
-  }
-  if (e.target.id === 'contact') {
-    const contact = document.querySelector('.contact-page');
-    hidePages();
-    contact.classList.remove('hide');
-  }
+const showInfo = () => {
+  clearContent();
+  Info.infoDetails();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  Nav.addNavBar();
+  Home.homePage();
+  const home = document.getElementById('home');
+  const menu = document.getElementById('menu');
+  const info = document.getElementById('info');
+
+  home.addEventListener('click', showHome);
+  menu.addEventListener('click', showMenu);
+  info.addEventListener('click', showInfo);
 });
