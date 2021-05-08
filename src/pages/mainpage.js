@@ -14,6 +14,6 @@ export default function initPage() {
 
     <div class="main-content"></div>
     `;
-  container.insertAjacentHTML('beforeend', html);
+  container.insertAdjacentHTML('beforeend', html);
   return container;
 }

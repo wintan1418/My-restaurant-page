@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config prod.config.js",
+    "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve"
   },
@@ -39,7 +40,7 @@
     "@types/terser-webpack-plugin": "^5.0.2",
     "clean-webpack-plugin": "^3.0.0"
   },
-  "mainpage": "webpack.config.js",
+  "main": "webpack.config.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wintan1418/My-restaurant-page.git"

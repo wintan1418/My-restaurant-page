@@ -1,3 +1,4 @@
+console.log('hello')
 import Navigation from './navigation';
 import initPage from './pages/mainpage';
 import homePage from './pages/home';
@@ -70,4 +71,3 @@ nav.onClick((e) => {
     contact.classList.remove('hide');
   }
 });
-console.log('hello')
