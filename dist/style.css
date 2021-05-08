@@ -1,6 +1,6 @@
 
 body {
-  background: url(./main-background1.jpg);
+  background: url(./rest.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -11,7 +11,7 @@ li {
 }
 
 h1 {
-  color: #0000FF;
+  color: #080827;
   font-weight: bold;
   text-decoration: dashed;
   font-family: 'Great Vibes', cursive;
@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  color: #FF4500;
+  color: #642a15;
   font-family: 'Great Vibes', cursive;
   font-size: 50px;
   font-weight: bold;
@@ -27,7 +27,7 @@ h2 {
 
 h3 {
   font-family: 'Gloria Hallelujah', cursive;
-  color: #573C30;
+  color: #64321c;
   font-size: 60px;
 }
 
@@ -40,7 +40,7 @@ h4 {
 a {
   text-decoration: none;
   font-size: 30px;
-  color:yellow;
+  color:rgb(224, 224, 87);
 }
 a:hover {
   color: #81B622;
