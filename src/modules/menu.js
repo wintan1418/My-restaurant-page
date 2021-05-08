@@ -16,19 +16,19 @@ const Menu = (() => {
     brkUl.classList.add('breakfast-ul');
     const brkList1 = document.createElement('li');
     brkList1.setAttribute('class', 'breakfast-list');
-    brkList1.textContent = 'jollof-rice: $10';
+    brkList1.textContent = 'jollof-rice: 10$';
     const brkList2 = document.createElement('li');
     brkList2.setAttribute('class', 'breakfast-list');
-    brkList2.textContent = '';
+    brkList2.textContent = 'custard & Akara:20$';
     const brkList3 = document.createElement('li');
     brkList3.setAttribute('class', 'breakfast-list');
-    brkList3.textContent = '';
+    brkList3.textContent = 'efo and pupuru:18$';
     const brkList4 = document.createElement('li');
     brkList4.setAttribute('class', 'breakfast-list');
-    brkList4.textContent = '';
+    brkList4.textContent = 'yam $ egg:25$';
     const brkList5 = document.createElement('li');
     brkList5.setAttribute('class', 'breakfast-list');
-    brkList5.textContent = '';
+    brkList5.textContent = 'pondo yam and egusi:50$';
 
     brkUl.appendChild(brkList1);
     brkUl.appendChild(brkList2);
