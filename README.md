@@ -54,9 +54,10 @@ Contributions, issues and feature requests are welcome!
 
 Oluwadare Juwon
 
-Github: @Oluwadare Juwon
-Linkedin: (www.linkedin.com/in/oluwintan)
-Twitter: Oluwadare-juwon
+- Github: [@Oluwadare Juwon](https://github.com/wintan1418)
+- Linkedin: (www.linkedin.com/in/oluwintan)
+- Twitter: [Oluwadare-juwon](https://twitter.com/@oluwadarejuwon)
+
 
 ## 🙋‍♂ show your support
 
